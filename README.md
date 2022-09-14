@@ -17,3 +17,5 @@ Here is the current list of functionality:
 And here are some functions I am considering adding in the future:
 
   - A function `merge` to take two CNF formulae, and merge them into one larger formula, while either (a) allowing the option to use the same variables in both formula, or (b) allowing the option to renumber the variables of the second formula so the two formula are disjoint, or (c) allowing the option to specify a mapping of the variables in the first formula and second formula, which would preserve the overlapping variables and leave any unspecified variables disjoint. Perhaps this will instead become three separate functions, for convenience.
+
+The easiest way to get started is to simply download the `template.cpp` file and start coding in the `main` function.
