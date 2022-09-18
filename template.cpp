@@ -47,7 +47,7 @@ namespace socho_sat {
                     return;
                 }
             }
-            cout << "p cnf << " << var_count << ' ' << clauses.size() << endl;
+            cout << "p cnf " << var_count << ' ' << clauses.size() << endl;
             for (auto clause: clauses) {
                 for (auto x: clause) {
                     cout << x << ' ';
