@@ -55,6 +55,23 @@ namespace socho_sat {
                 cout << 0 << endl;
             }
         }
+        
+        void read_cnf() {
+        	string temp;
+        	cin >> temp >> temp;
+        	int nv, nc;
+        	cin >> nv >> nc;
+        	set_var_count(nv);
+        	for (int i=0; i<nc; i++) {
+        		vector<int> clause;
+        		int x;
+        		while (cin >> x) {
+        			if (x == 0) break;
+        			clause.push_back(x);
+        		}
+        		add_clause(clause);
+        	}
+        }
 
     };
 
@@ -73,7 +90,5 @@ using namespace socho_sat;
 signed main() {
 	
 	fast(); // for fast IO with cin/cout (useful when output is massive)
-	
-	
 	
 }
